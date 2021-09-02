@@ -78,8 +78,6 @@ header {
     bottom: 50px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(212, 18, 18);
     border-color: #000;
     color: #5f6368;
 }
