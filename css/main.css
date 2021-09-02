@@ -12,7 +12,7 @@ a {
 header {
     display: flex;
     position: relative;
-    padding-top: 15px;
+    padding-top: 25px;
     color: #111;
     opacity: 0.75;
     font-size: 0.8em;
@@ -23,11 +23,11 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .top-left a {
-    margin: 15px 10px 0px 0px;
+    margin: 15px 15px 0px 0px;
 }
 
 #app-tray {
@@ -35,9 +35,13 @@ header {
 }
 
 #sign-in {
-    background-color: #4387fd;
+    border-color: transparent;
+    border-radius: 2px;
+    background-color: #4086ff;
     color: #FFF;
     text-align: center;
+    width: 65px;
+    height: 30px;
 }
 
 .top-right {
@@ -45,6 +49,15 @@ header {
     position: absolute;
     right: 0px;
     margin-right: 20px;
+}
+
+.top-right * {
+    margin-left: 15px;
+    
+}
+
+.top-right a {
+    font-size: 1.05em;
 }
 
 .logo {
@@ -105,25 +118,15 @@ header {
     border-color: rgba(75,75,75,0.2);
 }
 
-/*
-#search-btn {
-    margin-right: 5px;
-    color: #3c4043;
-}
-
-#lucky-btn {
-    margin-left: 5px;
-    color: #3c4043;
-}
-*/
-/* re-do footer links as <ul> */
-footer {
+#footer {
     position: fixed;
-    bottom: 50px;
+    bottom: 0px;
+    line-height: 50px;
     width: 100%;
-    display: flex;
-    border-color: #000;
+    height: 48px;
+    border: 1px solid #ccc;
     color: #5f6368;
+    background-color: #f2f2f2;
 }
 
 .bottom-left {
@@ -131,11 +134,17 @@ footer {
     position: absolute;
     left: 0px;
     margin-left: 20px;
+    font-size: 0.9em;
 }
 
 .bottom-right {
     display: inline-block;
     position: absolute;
     right: 0px;
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
     margin-right: 20px;
 }
