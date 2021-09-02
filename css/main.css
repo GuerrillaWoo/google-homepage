@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+header {
+    position: relative;
+    padding-top: 15px;
+    color: #111;
+    opacity: 0.75;
+    font-size: 0.8em;
+}
+
+
+.top-left {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    margin-left: 20px;
+}
+
+#app-tray {
+    border-color: transparent;
+}
+
+#sign-in {
+    background-color: #4387fd;
+    color: #FFF;
+    text-align: center;
+}
+
+.top-right {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    padding-top: 190px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search-box {
+    min-width: 400px;
+    width: 600px;
+    height: 20px;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: #3c4043;
+    border-radius: 4px;
+    border-color: #f2f2f2;
+    width: 200px;
+    height: 30px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(212, 18, 18);
+    border-color: #000;
+    color: #5f6368;
+}
+
+.bottom-left {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    margin-left: 20px;
+}
+
+.bottom-right {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+
