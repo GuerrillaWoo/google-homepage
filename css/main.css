@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, Arial;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -8,6 +8,9 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 header {
     display: flex;
@@ -30,9 +33,32 @@ header {
     margin: 15px 15px 0px 0px;
 }
 
+.top-right {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    margin-right: 20px;
+}
+
+.top-right * {
+    margin-left: 10px;
+}
+
+.top-right a {
+    font-size: 1.05em;
+    opacity: 0.8;
+}
+
 #app-tray {
     border-color: transparent;
-}
+    background-color: transparent;
+    opacity: 1;
+    height: 30px;
+    width: fit-content;
+    opacity: 0.8;
+} 
 
 #sign-in {
     border-color: transparent;
@@ -42,22 +68,8 @@ header {
     text-align: center;
     width: 65px;
     height: 30px;
-}
-
-.top-right {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    margin-right: 20px;
-}
-
-.top-right * {
-    margin-left: 15px;
-    
-}
-
-.top-right a {
-    font-size: 1.05em;
+    font-size: inherit;
+    font-weight: 600;
 }
 
 .logo {
@@ -74,18 +86,26 @@ header {
     margin-top: 20px;
 }
 
+#search-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+} 
+
 #search-box:focus {
     outline: none;
 }
 
 #search-box {
     min-width: 400px;
-    width: 600px;
-    height: 30px;
+    width: 500px;
+    height: 38px;
     border-radius: 20px;
     border-color: rgba(204, 204, 204, 0.7);
     border-width: 1px;
     border-style: solid;
+    background-image: url("../assets/search-icon/1x/outline_search_black_24dp.png" no-repeat);
 }
 
 #search-box:hover {
