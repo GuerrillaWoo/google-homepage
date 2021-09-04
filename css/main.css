@@ -19,7 +19,7 @@ header {
     color: #111;
     opacity: 0.75;
     font-size: 0.8em;
-}
+} 
 
 
 .top-left {
@@ -36,6 +36,7 @@ header {
 .top-right {
     display: flex;
     flex-direction: row;
+    align-items: center;
     position: absolute;
     right: 0px;
     top: 25px;
@@ -48,13 +49,11 @@ header {
 
 .top-right a {
     font-size: 1.05em;
-    opacity: 0.8;
 }
 
 #app-tray {
     border-color: transparent;
     background-color: transparent;
-    opacity: 1;
     height: 30px;
     width: fit-content;
     opacity: 0.8;
@@ -74,16 +73,22 @@ header {
 
 .logo {
     display: flex;
+    position: relative;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: 100px;
-    padding-top: 190px;
+    padding-top: 140px;
+    margin-bottom: 70px;
+    top: 40px;
 }
 
 .search {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
+    padding-left: 80px;
 }
 
 #search-icon {
@@ -98,14 +103,22 @@ header {
 }
 
 #search-box {
+    display: flex;
+    justify-content: center;
     min-width: 400px;
     width: 500px;
+    padding-left: 35px;
+    margin-right: 50px;
     height: 38px;
     border-radius: 20px;
     border-color: rgba(204, 204, 204, 0.7);
     border-width: 1px;
     border-style: solid;
-    background-image: url("../assets/search-icon/1x/outline_search_black_24dp.png" no-repeat);
+    background-image: url("../assets/search-icon/1x/outline_search_black_24dp.png");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 20px 20px;
+    opacity: 0.5;
 }
 
 #search-box:hover {
@@ -116,7 +129,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 600px;
+    width: 500px;
     height: 30px;
     margin-top: 30px;
 }
